@@ -1,36 +1,216 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content="images/startbanner.png" />
+        <meta property="og:url" content="https://leotherastudios.co.za" />
+        <link rel="stylesheet" href="style.css" />
+        <meta name="description" content="Singularity Redefined" />
         <title>Leothera Studios</title>
-        <link rel="icon" type="image/png" href="./images/icon.png" />
+        <link rel="icon" type="image/png" href="./svgs/logo_icon.svg" />
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <meta property="og:title" content="Leothera Studios Official Website" />
         <meta
             property="og:description"
             content="One of South Africa's most ambitious development companies."
         />
-        <meta property="og:image" content="images/startbanner.png" />
-        <meta property="og:url" content="https://leotherastudios.co.za" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css" />
-
-        <meta
-            name="description"
-            content="Singularity Redefined"
-        />
         <script src="script.js"></script>
     </head>
-
     <body>
-        <section id="starting-section">
-            <div id="content-div">
-                <img
-                    draggable="false"
-                    id="main-title"
-                    src="svgs/logo.svg"
-                />
-               <h2 id="sub-title">COMING SOON</h2>
-            </div>
-            
-        </section>
+    
+    <!-- ── STARFIELD ─────────────────────────────── -->
+    <canvas id="starfield"></canvas>
+    
+    <!-- ── NAV ──────────────────────────────────── -->
+    <nav id="nav">
+      <a href="#" class="nav-logo">
+        <img class="nav-logo-icon" src="svgs/logo_icon.svg" alt="Leothera Studios icon" onerror="this.style.display='none'">
+        <span class="nav-logo-text">Leothera Studios</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#games">Games</a></li>
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+      </ul>
+    </nav>
+    
+    <!-- ── HERO ─────────────────────────────────── -->
+    <section class="hero" id="home">
+      <div class="hero-logo-wrap">
+        <img class="hero-studio-logo" src="svgs/logo.svg" alt="Leothera Studios" onerror="this.alt='LEOTHERA STUDIOS'">
+      </div>
+      <p class="hero-eyebrow">· Est. 2025</p>
+      <p class="hero-tagline">Worlds built from myth, science fiction,<br>and the spaces between.</p>
+      <div class="hero-cta-row">
+        <a href="#games" class="btn filled">Explore Our Games</a>
+        <a href="#studio" class="btn">About the Studio</a>
+      </div>
+      <div class="scroll-hint">Scroll</div>
+    </section>
+    
+    <div class="gold-divider"><span class="divider-symbol">✦</span></div>
+    
+    <!-- ── GAMES ────────────────────────────────── -->
+    <section id="games">
+      <div class="games-heading">
+        <p class="section-label">In Development</p>
+        <h2>Our Games</h2>
+      </div>
+    
+      <!-- AKORI -->
+      <div class="game-panel panel-akori">
+        <div class="game-visual">
+          <img class="game-char-img" src="images/img_akori.png" alt="Gera — Akorus character">
+        </div>
+        <div class="game-info">
+          <img class="game-logo-img" src="images/img_acf_title.png" alt="Akorus">
+          <p class="game-genre">Retro Sci-Fi · RPG · Co-op</p>
+          <p class="game-description">
+            Set in an alternate Solar System where Saturn was once a binary planet, Akorus follows 
+            an organisation on a mission to recover the lost artifacts of the Akori, an ancient alien race 
+            whose civilisation shaped the solar system itself. As you recover relics and unravel their fate, 
+            your choices determine the story's path.
+          </p>
+          <div class="game-tags">
+            <span class="tag">PC</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Single Player</span>
+            <span class="tag">4-Player Co-op</span>
+            <span class="tag">Godot 4</span>
+          </div>
+          <div class="game-status">
+            <span class="status-dot"></span>
+            Alpha · Expected February 2027
+          </div>
+          <a href="#roadmap" class="btn">View Roadmap</a>
+        </div>
+      </div>
+    
+      <!-- VIHLTARA -->
+      <div class="game-panel panel-vihltara reverse">
+        <div class="game-visual">
+          <img class="game-char-img" src="images/img_vihl.png" alt="Vihltara character">
+        </div>
+        <div class="game-info">
+          <img class="game-logo-img" src="images/img_vlt_title.png" alt="Vihltara">
+          <p class="game-genre">African Mythology · Surrealist RPG · First Person</p>
+          <p class="game-description">
+            A vibrant fusion of African mythology, science fiction, and surrealism. 
+            Every path you choose leaves a mark on what remains.
+            More information soon.
+          </p>
+          <div class="game-tags">
+            <span class="tag">PC</span>
+            <span class="tag">Linux</span>
+            <span class="tag">First Person</span>
+            <span class="tag">Open World</span>
+            <span class="tag">Godot 4</span>
+          </div>
+          <div class="game-status">
+            <span class="status-dot"></span>
+            In Active Development
+          </div>
+          <a href="#roadmap" class="btn">View Roadmap</a>
+        </div>
+      </div>
+    </section>
+    
+    <div class="gold-divider" style="margin-top: 80px;"><span class="divider-symbol">✦</span></div>
+    
+    <!-- ── STUDIO ─────────────────────────────── -->
+    <section id="studio">
+      <div class="inner">
+        <p class="section-label">The Studio</p>
+        <h2>Built in South Africa,<br>for the world.</h2>
+        <p>
+          Leothera Studios is an independent game development studio based in South Africa, 
+          crafting story-driven experiences that draw on a breadth of cultural mythology, 
+          speculative science, and original world-building.
+        </p>
+        <p>
+          We work with Godot, Blender, and a belief that small teams can build worlds worth 
+          losing yourself in. Our games are designed to be deeply playable on modest hardware 
+          because great stories shouldn't require a flagship machine.
+        </p>
+      </div>
+      <div class="studio-facts" style="max-width:800px;margin:72px auto 0;">
+        <div class="fact">
+          <span class="fact-value">2</span>
+          <span class="fact-label">Games in Development</span>
+        </div>
+        <div class="fact">
+          <span class="fact-value">SA</span>
+          <span class="fact-label">Based in South Africa</span>
+        </div>
+        <div class="fact">
+          <span class="fact-value">2027</span>
+          <span class="fact-label">First Release Target</span>
+        </div>
+      </div>
+    </section>
+    
+    <div class="gold-divider"><span class="divider-symbol">✦</span></div>
+    
+    <!-- ── ROADMAP ───────────────────────────── -->
+    <section id="roadmap">
+      <div class="roadmap-inner">
+        <div class="roadmap-header">
+          <p class="section-label">What's Ahead</p>
+          <h2>Development Roadmap</h2>
+        </div>
+        <div class="timeline">
+    
+          <div class="milestone completed">
+            <p class="milestone-date">October 2025</p>
+            <h3 class="milestone-title">Art Style & Visuals Established</h3>
+            <p class="milestone-desc">Core visual language locked in: materials, particles, rendering approach, and character templates defined for both titles.</p>
+            <span class="milestone-game-tag">Akorus · Vihltara</span>
+          </div>
+    
+          <div class="milestone active">
+            <p class="milestone-date">April 2026</p>
+            <h3 class="milestone-title">Akorus Demo Build</h3>
+            <p class="milestone-desc">A proof-of-concept build showcasing key gameplay loops, story elements, and the retro sci-fi aesthetic of Akorus.</p>
+            <span class="milestone-game-tag">Akorus</span>
+          </div>
+    
+          <div class="milestone">
+            <p class="milestone-date">August 2026</p>
+            <h3 class="milestone-title">Akorus Alpha Version</h3>
+            <p class="milestone-desc">An early full-content build with expanded mechanics, multiple quest types, and the optional co-op mode.</p>
+            <span class="milestone-game-tag">Akorus</span>
+          </div>
+    
+          <div class="milestone">
+            <p class="milestone-date">December 2026</p>
+            <h3 class="milestone-title">Testing Complete</h3>
+            <p class="milestone-desc">All bug fixes and testing finalised. Core development wraps: polish phase begins ahead of launch.</p>
+            <span class="milestone-game-tag">Akorus</span>
+          </div>
+    
+          <div class="milestone">
+            <p class="milestone-date">February 2027</p>
+            <h3 class="milestone-title">Akorus Release</h3>
+            <p class="milestone-desc">Akorus launches on PC (Windows & Linux). Post-launch content updates scheduled bi-monthly, with patches monthly.</p>
+            <span class="milestone-game-tag">Akorus</span>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+    <div class="gold-divider"><span class="divider-symbol">✦</span></div>
+
+    
+    <!-- ── FOOTER ────────────────────────────── -->
+    <footer>
+      <p class="footer-copy">© 2025 <span>Leothera Studios</span>. All rights reserved.</p>
+      <img class="footer-logo" src="svgs/logo.svg" alt="Leothera Studios">
+    </footer>
+    
     </body>
-</html>
+    </html>
